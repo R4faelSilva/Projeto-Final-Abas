@@ -82,7 +82,7 @@
     font-size: 40px;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1600px) {
     .container1, .container2, .container3 {
         flex-direction: column;
         width: 1000px;
