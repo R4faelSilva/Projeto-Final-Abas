@@ -1,0 +1,105 @@
+[
+  {
+    "elemento": "Placa-mãe",
+    "funcao": "Possui a opção WOL que precisa ser ativada na BIOS",
+    "necessario": "✅",
+    "compatibilidade": "➖",
+    "observacao": "Nem todas suportam, pesquise o modelo em videos e confira no manual"
+  },
+
+  {
+    "elemento": "Adaptador de rede",
+    "funcao": "É responsável por receber o “pacote mágico” para ligar o PC",
+    "necessario": "✅",
+    "compatibilidade": "Windows / Linux / macOS",
+    "observacao": "Precisa permitir que acorde o computador"
+  },
+
+  {
+    "elemento": "Fonte de energia",
+    "funcao": "O dispositivo deve receber alimentação de energia constantemente",
+    "necessario": "✅",
+    "compatibilidade": "➖",
+    "observacao": "Deve estar conectado na tomada, mas não ligado só recebendo energia"
+  },
+
+  {
+    "elemento": "Roteador / Modem",
+    "funcao": "Encaminha o pacote WOL pela rede",
+    "necessario": "✅",
+    "compatibilidade": "➖",
+    "observacao": "Para configurações mais complicadas eles recisam ter IP-MAC binding e outras opções avançadas"
+  },
+
+  {
+    "elemento": "Endereço MAC",
+    "funcao": "Identifica o dispositivo na rede",
+    "necessario": "✅",
+    "compatibilidade": "➖",
+    "observacao": "Cada placa de rede tem um endereço único (então cuidado para não vazar)"
+  },
+
+  {
+    "elemento": "IP-MAC Binding",
+    "funcao": "Liga o IP ao endereço MAC no roteador",
+    "necessario": "ℹ️",
+    "compatibilidade": "➖",
+    "observacao": "Evita que o pacote vá para outro dispositivo ao atualizar o IP"
+  },
+
+  {
+    "elemento": "Servidor local (opcional)",
+    "funcao": "Pode enviar o pacote WOL automaticamente",
+    "necessario": "❌",
+    "compatibilidade": "➖",
+    "observacao": "Necessário se estiver fora da empresa/casa, já que para ligar fora da mesma rede, ainda precisa de algum outro dispositivo sempre ligado na mesma rede que o cmputador"
+  },
+
+  {
+    "elemento": "TeamViewer",
+    "funcao": "Acesso remoto com suporte a WOL",
+    "necessario": "ℹ️",
+    "compatibilidade": "Windows / macOS / Linux",
+    "observacao": "WOL disponível apenas na versão paga, mas o acesso remoto é gratuito"
+  },
+
+  {
+    "elemento": "Parsec",
+    "funcao": "Acesso remoto, porem mais voltado a jogos",
+    "necessario": "❌",
+    "compatibilidade": "Windows / macOS / Linux",
+    "observacao": "Não envia WOL, mas permite controle remoto, é possuí outras versões para focado no ramo empresarial"
+  },
+
+  {
+    "elemento": "Google Remote Desktop",
+    "funcao": "Controle remoto via navegador",
+    "necessario": "❌",
+    "compatibilidade": "Windows / Linux / macOS",
+    "observacao": "Pode desbloquear o PC após o WOL se tiver senha para entrar"
+  },
+
+  {
+    "elemento": "Magic Packet",
+    "funcao": "Pacote que “acorda” o computador, que é enviado através na rede",
+    "necessario": "✅",
+    "compatibilidade": "➖",
+    "observacao": "Precisa de algum software ou aplicativo para mandá-lo na rede"
+  },
+
+  {
+    "elemento": "Sistema operacional",
+    "funcao": "Gerencia o driver da placa de rede",
+    "necessario": "✅",
+    "compatibilidade": "Alguns sistemas são: Windows / Linux / macOS",
+    "observacao": "WOL precisa estar habilitado no driver"
+  },
+
+  {
+    "elemento": "Aplicativo WOL (celular)",
+    "funcao": "Envia o pacote de ativação",
+    "necessario": "ℹ️",
+    "compatibilidade": "Android / iOS",
+    "observacao": "Facilita o uso de forma remota"
+  }
+]

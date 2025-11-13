@@ -1,0 +1,249 @@
+.secaoSlideAbertura {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.slider-wrapper .slider-item {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center; 
+    border-top: 2px solid white;
+}
+
+.slider-wrapper .slider-item::after {
+    content: '';
+    position: absolute;
+    bottom: 895.5px;
+    left: 163.5px;
+    height: 3px;
+    width: 246px;
+    background-color: rgb(0, 0, 0);
+    z-index: 3;
+}
+
+.slider-wrapper #slide1::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/notebook-codigos.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-wrapper #slide2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/asus-bios.png");
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.slider-wrapper #slide3::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/DesktopRemoto.png");
+    background-position: cover;
+}
+
+.slider-wrapper .slider-item .slider-content {
+    color: white;
+    z-index: 20;
+    width: 50%;
+    margin: auto;
+    margin-left: 100px;
+    padding: 20px;
+    max-width: 600px;
+    position: relative;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.slider-wrapper .slider-item .slider-content > * {
+    max-width: 100%;
+}
+
+.slider-item .slider-content .slider-subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.slider-item .slider-content .slider-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.slider-item .slider-content .slider-description {
+    margin-top: 25px;
+    line-height: 25px;
+    font-size: 1.3rem;
+} 
+
+.slider-item .slider-content .slider-button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    transition: 0.5s ease;
+}
+
+.slider-item .slider-content .slider-button:hover {
+    color: black;
+    background: white;
+}
+
+.slider-container .slider-controls {
+    position: absolute;
+    bottom: 20px;
+    z-index: 20;
+    width: 100%;
+}
+
+.slider-controls .slider-pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 60px;
+    min-width: 45px;
+    min-height: 40px;
+    gap: 50px;
+}
+
+.slider-pagination .slider-tab {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: visible;
+    transition: 1s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.slider-pagination .slider-tab:hover {
+    border-color: white;
+}
+
+/* criando um circulo com pseudo elemento para fazer um efeito no hover */
+
+.slider-pagination .slider-tab::before {
+    content: "";
+    z-index: -1; 
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    bottom: -200px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent 60%); 
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.slider-pagination .slider-tab:hover::before {
+    opacity: 1; 
+    z-index: -1;
+}
+
+/* botões laterais */
+
+.slider-arrows button {
+    position: absolute;
+    top: 50%;
+    color: white;
+    background: rgba(39, 34, 34, 0.5);
+    backdrop-filter: blur(5px);
+    transform: translateY(-50%);
+    z-index: 20;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.slider-arrows button:hover {
+    background: white;
+    color: black;
+}
+
+.slider-arrows button#voltar {
+    left: 20px;
+}
+
+.slider-arrows button#avanco {
+    right: 20px;
+}
+
+@media (max-width: 1536px) {
+   .slider-wrapper .slider-item .slider-content, 
+    .slider-controls .slider-pagination {
+        width: 85%;
+   } 
+}
+
+@media (max-width: 1024px) {
+    .slider-wrapper .slider-item .slider-content, 
+    .slider-controls .slider-pagination {
+        width: 100%;
+    }
+
+    .slider-wrapper .slider-item .slider-content > * {
+        max-width: 66%;
+    }
+
+    .slider-arrows button {
+        top: unset;
+        bottom: 35px;
+    }
+    
+}
+
+@media (max-width: 768) {
+    .slider-wrapper .slider-item .slider-content > * {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Formulário Abas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonte -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family" rel="stylesheet">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="./style/style.css" />
+
+    <!-- Cadastro Pessoal -->
+    <link rel="stylesheet" href="./style/cadastro.css">
+
+    <!-- Cadastro Estudantil -->
+    <link rel="stylesheet" href="./style/estudantil.css">
+
+    <!-- Cadastro Postal -->
+     <link rel="stylesheet" href="./style/postal.css">
+
+     <!-- Tabela Dinâmica -->
+      <link rel="stylesheet" href="./style/tabela.css">
+
+      <!-- Carrosel -->
+       <link rel="stylesheet" href="./style/carousel.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+      <!-- Gráfico -->
+      <link rel="stylesheet" href="./style/grafico.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+      <!-- Land Page Site WOL -->
+       <link rel="stylesheet" href="./style/siteWOL.css">
+       <link rel="stylesheet" href="./style/manual.css">
+
+       <!-- SLide -->
+        <link rel="stylesheet" href="./style/slide.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+  <div class="containerMenu">
+    <!-- <h2>Abas Dinâmicas</h2> -->
+    <ul class="nav nav-pills" id="navPills" role="tablist">
+      <li class="nav-item primeira_pills">
+        <a class="nav-link active" data-bs-toggle="tab" href="#abertura">Abertura</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Dados Pessoais</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Dados Estudantis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu3">Dados Postais</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu4">Tabela Dinâmica</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu5">Carrousel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu6">Gráficos Dinâmicos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu7">LandPage do Projeto</a>
+      </li>
+      <li class="nav-item ultima_pills">
+        <a class="nav-link" data-bs-toggle="tab" href="#menu8">Localização</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- Abertura Slide -->
+
+      <div id="abertura" class="tab-pane fade show active">
+        <section class="secaoSlideAbertura">
+          <div class="slider-container swiper-container">
+            <div class="slider-wrapper swiper-wrapper">
+                <div id="slide1" class="slider-item swiper-slide">
+                    <div class="slider-content">
+                        <h3 class="slider-subtitle">01</h3>
+                        <h2 class="slider-title">Ligue Seu PC de Onde Estiver</h2>
+                        <p class="slider-description">Uma alternativa inteligente para ligar remotamente seu Desktop ou Servidor usando a tecnologia Wake-on-LAN (WOL)</p>
+                        <a href="#menu7" data-bs-toggle="tab" class="slider-button" id="botaoSaibaMais">Saiba mais</a>
+                    </div>
+                </div>
+                <div id="slide2" class="slider-item swiper-slide">
+                    <div class="slider-content">
+                        <h3 class="slider-subtitle">02</h3>
+                        <h2 class="slider-title">A Mágica do Pacote de Dados</h2>
+                        <p class="slider-description">O WOL utiliza uma mensagem de rede chamada Magic-Packet enviada ao Endereço MAC do seu dispositivo. É rápido, eficiente e feito sob medida.</p>
+                        <a href="#menu7" data-target-manual="#navManual" data-bs-toggle="tab" class="slider-button" id="botaoSaibaMais2">Saiba mais</a>
+                    </div>
+                </div>
+                <div id="slide3" class="slider-item swiper-slide">
+                    <div class="slider-content">
+                        <h3 class="slider-subtitle">03</h3>
+                        <h2 class="slider-title">Integre. Controle. Use.</h2>
+                        <p class="slider-description">O verdadeiro poder do WOL está em sua integração com Softwares de Desktop Remoto, permitindo acesso completo a arquivos e programas.</p>
+                        <a href="#menu5" data-bs-toggle="tab" class="slider-button" id="botaoSaibaMais3">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <ul class="slider-pagination">
+                    <li class="slider-tab">Descubra como funciona</li>
+                    <li class="slider-tab">Ver Pré-requisitos necessários</li>
+                    <li class="slider-tab">Conheça os Softwares</li>
+                </ul>
+            </div>
+            
+            <div class="slider-arrows">
+                <button id="voltar" class="material-symbols-outlined">arrow_circle_left</button>
+                <button id="avanco" class="material-symbols-outlined">arrow_circle_right</button>
+            </div>
+          </div>
+          <footer class="aberturaFooter">
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>       
+      </div>
+
+      <!-- Cadastro Pessoal -->
+
+      <div id="menu1" class="tab-pane fade">
+        <section class="secaoPessoal">
+          <div id="tituloPessoal" >
+              <h1>Cadastro Pessoal e de Entrega</h2>
+            </div>
+          <div class="container mt-4">
+            <form class="fundo">
+              <div id="titulo1">
+                <p>Informações Pessoais e Endereço de Entrega:</p>
+              </div>
+
+              <!-- Nome completo e Email-->
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome completo" required value="Rafael Silva Machado">
+                </div>
+                <div class="col-md-4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" value="rafaelsilva@gmail.com">
+                </div>
+              </div>
+
+              <!-- CPF e Data de Nascimento -->
+              
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <label for="cpf" class="form-label">CPF</label>
+                  <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required value="444.222.888-30">
+                </div>
+                
+                <div class="col-md-4">
+                  <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="dataNascimento" required value="2006-08-12">
+                </div>
+              </div>
+
+              <div id="titulo2">
+                <p>Cadastro de Entrega:</p>
+              </div>
+
+              <!-- Endereço, Número e Complemento -->
+              <div class="espacoCampos">
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" placeholder="Rua, Av." required value="Av. Brasil">
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero" placeholder="Número da residência" required value="180">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bairro, CEP, Cidade e Estado -->
+              
+              <div class="espacoCampos">
+                <div class="row mb-3">
+                  <div class="col-md-3">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="Vila Aparecida">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="CEP" value="14401-240">
+                  </div>
+                
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="cidade" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="cidade" placeholder="Cidade" required value="Franca">
+                    </div>
+                    <div class="col-md-2">
+                      <label for="estado" class="form-label">Estado</label>
+                      <select id="estado" class="selectpicker form-control" data-live-search="true" required>
+                        <option value="sao p">SP - São Paulo</option>
+                        <option value="acr">AC - Acre</option>
+                        <option value="alg">AL - Alagoas</option>
+                        <option value="amap">AP - Amapá</option>
+                        <option value="amazo">AM - Amazonas</option>
+                        <option value="bah">BA - Bahia</option>
+                        <option value="cea">CE - Ceará</option>
+                        <option value="distr">DF - Distrito Federal</option>
+                        <option value="esp">ES - Espírito Santo</option>
+                        <option value="goi">GO - Goiás</option>
+                        <option value="mara">MA - Maranhão</option>
+                        <option value="mato grosso">MT - Mato Grosso</option>
+                        <option value="mato grosso do sul">MS - Mato Grosso do Sul</option>
+                        <option value="minas">MG - Minas Gerais</option>
+                        <option value="para">PA - Pará</option>
+                        <option value="paraiba">PB - Paraíba</option>
+                        <option value="paran">PR - Paraná</option>
+                        <option value="perna">PE - Pernambuco</option>
+                        <option value="piau">PI - Piauí</option>
+                        <option value="rio">RJ - Rio de Janeiro</option>
+                        <option value="rio grande do norte">RN - Rio Grande do Norte</option>
+                        <option value="rio grande do sul">RS - Rio Grande do Sul</option>
+                        <option value="rond">RO - Rondônia</option>
+                        <option value="rorai">RR - Roraima</option>
+                        <option value="santa">SC - Santa Catarina</option>
+                        <option value="serg">SE - Sergipe</option>
+                        <option value="tocan">TO - Tocantins</option>
+                        <option value="">Selecione um estado...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="espacoCampos">
+                  <div class="col-md-5">
+                    <label for="complemento" class="form-label">Complemento para ajudar a Entrega</label>
+                    <textarea id="caixaTexto" type="text" rows="7" placeholder="Exemplo de complemento: Estarei e casa a partir das 13h...." class="form-control">Fica na frente do posto, horario comercial de funcionamento das 8Hrs as 18Hrs</textarea>
+                  </div>
+                </div>
+
+              <!-- Telefones -->
+              <div class="espacoCampos">
+                <div  class="d-flex gap-5" class="row mb-3">
+                  <div class="col-md-4">
+                    <label for="telefoneResidencial" class="form-label">Telefone Residencial</label>
+                    <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99339-9087">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="telefoneCelular" class="form-label">Telefone Celular</label>
+                    <input type="tel" class="form-control" id="telefoneCelular" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99255-0220">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botões -->
+              <div id="botoes" class="d-flex gap-2">
+                <button id="salvar" type="submit" class="btn btn-primary">Salvar</button>
+                <button id="limpar" type="reset" class="btn btn-secondary">Limpar</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+      </div>
+
+      <!-- Cadastro Estudantil -->
+
+      <div id="menu2" class="tab-pane fade">
+        <section class="secaoEscoalar">
+          <header class="cabecalho">
+            <h1>Histórioco Secretaria Online</h1>
+          </header>
+
+          <div id="titulo" class="text-center mb-4">
+              <h2>Cadastro da Linha do Tempo Escolar</h2>
+          </div>
+        
+          <div class="container mt-4">
+              <div id="aviso">
+                  <h4>Preencha todas as informações necessárias!</p>
+              </div>
+
+              <!-- Primeiro bloco de formulário com os dados pessoais -->
+              <form id="formulario1">
+                  <div id="tituloFormulario1">
+                      <h4>Dados Pessoais</h2>
+                  </div>
+
+                  <!-- Nome e Data de Nascimento -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite seu nome completo" required value="Rafael SIlva Machado">
+                      </div>
+
+                      <div class="col-md-3">
+                          <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                          <input type="date" class="form-control" id="dataNascimento" required value="2006-08-12">
+                      </div>
+                  </div>
+
+                  <!-- CPF, RG e Sexo -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="cpf" class="form-label">CPF</label>
+                          <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" required value="444.222.888-30">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="cpf" class="form-label">RG</label>
+                          <input type="text" class="form-control" id="RG" placeholder="Digite seu RG" required value="12345678-2">
+                      </div>
+                      <div class="col-md-3">
+                          <label for="sexo" class="form-label">Sexo</label>
+                          <select id="sexo" class="form-select" required>
+                              <option value="masculino">Masculino</option>
+                              <option value="feminino">Feminino</option>
+                              <option value="selecione">Selecione uma opção...</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <!-- Telefone e Email -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="telefoneResidencial" class="form-label">Telefone</label>
+                          <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99255-0220">
+                      </div>
+                      <div class="col-md-5">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Informe seu email principal" value="rafaelsilva@gmail.com">
+                      </div>
+                  </div>
+              </form>
+
+              <form id="formulario2">
+                  <div id="tituloFormulario2">
+                      <h4>Dados Educacionais - Ensino Fundamental 1 (Primario)</h2>
+                  </div>
+
+                  <!-- Instituição -->
+                  <div class="row mb-3">
+                      <div class="col-md-6">
+                          <label for="nomeCompleto" class="form-label">Instituição de Ensino</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome da Instituição" required value="E. E. Barão de Franca">
+                      </div>
+                  </div>
+
+                  <!-- Número da matricula -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="matricula" class="form-label">N° da Matricula</label>
+                          <input type="text" class="form-control" id="matricula" placeholder="Número da matricula" required value="885552">
+                      </div>
+                  </div>
+                  
+                  <!-- Período do Ano -->
+                  <div class="row mb-3">
+                      <div class="col-md-2">
+                          <label for="periodo" class="form-label">Período/Ano</label>
+                          <input type="text" class="form-control" id="periodo" placeholder="Período do Ano" required value="1° ao 5°">
+                      </div>
+                  </div>
+
+                  <!-- Turno -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="turno" class="form-label">Turno</label>
+                          <select id="turno" class="form-select" required>
+                              <option value="manha">Manhã</option>
+                              <option value="tarde">Tarde</option>
+                              <option value="noite">Noite</option>
+                              <option value="selecione">Selecione uma opção...</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <!-- Data de Ingresso/Conclusão -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="ingresso" class="form-label">Data de Ingresso</label>
+                          <input type="date" class="form-control" id="ingresso" placeholder="dd/mm/aaaa" value="2013-01-01">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="conclusao" class="form-label">Data de Conclusão</label>
+                          <input type="date" class="form-control" id="conclusao" placeholder="dd/mm/aaaa" value="2017-12-01">
+                      </div>
+                  </div>
+              </form>  
+          </div>
+
+          <div class="container mt-4">
+              <form id="formulario3">
+                  <div id="tituloFormulario3">
+                      <h4>Dados Educacionais - Ensino Fundamental 2 (Ginásio)</h2>
+                  </div>
+
+                  <!-- Instituição -->
+                  <div class="row mb-3">
+                      <div class="col-md-6">
+                          <label for="nomeCompleto" class="form-label">Instituição de Ensino</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome da Instituição" required value="Profa. Ana Maria Junqueira">
+                      </div>
+                  </div>
+
+                  <!-- Número da matricula -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="matricula" class="form-label">N° da Matricula</label>
+                          <input type="text" class="form-control" id="matricula" placeholder="Número da matricula" required value="854736">
+                      </div>
+                  </div>
+                  
+                  <!-- Período do Ano -->
+                  <div class="row mb-3">
+                      <div class="col-md-2">
+                          <label for="periodo" class="form-label">Período/Ano</label>
+                          <input type="text" class="form-control" id="periodo" placeholder="Período do Ano" required value="6° ao 9°">
+                      </div>
+                  </div>
+
+                  <!-- Turno -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="turno" class="form-label">Turno</label>
+                          <select id="turno" class="form-select" required>
+                              <option value="manha">Manhã</option>
+                              <option value="tarde">Tarde</option>
+                              <option value="noite">Noite</option>
+                              <option value="selecione">Selecione uma opção...</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <!-- Data de Ingresso/Conclusão -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="ingresso" class="form-label">Data de Ingresso</label>
+                          <input type="date" class="form-control" id="ingresso" placeholder="dd/mm/aaaa" value="2018-01-01">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="conclusao" class="form-label">Data de Conclusão</label>
+                          <input type="date" class="form-control" id="conclusao" placeholder="dd/mm/aaaa" value="2021-12-01">
+                      </div>
+                  </div>
+              </form>
+
+              <form id="formulario4">
+                  <div id="tituloFormulario4">
+                      <h4>Dados Educacionais - Ensino Médio (Colegial)</h2>
+                  </div>
+
+                  <!-- Instituição -->
+                  <div class="row mb-3">
+                      <div class="col-md-6">
+                          <label for="nomeCompleto" class="form-label">Instituição de Ensino</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome da Instituição" required value="ETEC Dr. Julio Cardoso">
+                      </div>
+                  </div>
+
+                  <!-- Número da matricula -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="matricula" class="form-label">N° da Matricula</label>
+                          <input type="text" class="form-control" id="matricula" placeholder="Número da matricula" required value="99577468">
+                      </div>
+                  </div>
+
+                  <!-- Período do Ano -->
+                  <div class="row mb-3">
+                      <div class="col-md-2">
+                          <label for="periodo" class="form-label">Período/Ano</label>
+                          <input type="text" class="form-control" id="periodo" placeholder="Período do Ano" required value="1° ao 3°">
+                      </div>
+                  </div>
+
+                  <!-- Turno -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="turno" class="form-label">Turno</label>
+                          <select id="turno" class="form-select" required>
+                              <option value="tarde">Tarde</option>
+                              <option value="manha">Manhã</option>
+                              <option value="noite">Noite</option>
+                              <option value="selecione">Selecione uma opção...</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <!-- Data de Ingresso/Conclusão -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="ingresso" class="form-label">Data de Ingresso</label>
+                          <input type="date" class="form-control" id="ingresso" placeholder="dd/mm/aaaa" value="2022-01-01">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="conclusao" class="form-label">Data de Conclusão</label>
+                          <input type="date" class="form-control" id="conclusao" placeholder="dd/mm/aaaa"  value="2024-12-01">
+                      </div>
+                  </div>
+              </form>
+              <form id="formulario5">
+                  <div id="tituloFormulario5">
+                      <h4>Dados Educacionais - Ensino Superior</h2>
+                  </div>
+
+                  <!-- Instituição -->
+                  <div class="row mb-3">
+                      <div class="col-md-6">
+                          <label for="nomeCompleto" class="form-label">Instituição de Ensino</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Nome da Instituição" required value="Faculdade de Tecnologia Dr. Thomaz Novelino">
+                      </div>
+                  </div>
+
+                  <!-- Número da matricula -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="matricula" class="form-label">N° da Matricula</label>
+                          <input type="text" class="form-control" id="matricula" placeholder="Número da matricula" required value="7884456962">
+                      </div>
+                  </div>
+
+                  <!-- Período do Ano -->
+                  <div class="row mb-3">
+                      <div class="col-md-2">
+                          <label for="periodo" class="form-label">Período/Ano</label>
+                          <input type="text" class="form-control" id="periodo" placeholder="Período do Ano" required value="1° ao 6° semestre">
+                      </div>
+                  </div>
+
+                  <!-- Turno -->
+                  <div class="row mb-3">
+                      <div class="col-md-3">
+                          <label for="turno" class="form-label">Turno</label>
+                          <select id="turno" class="form-select" required>
+                              <option value="noite">Noite</option>
+                              <option value="manha">Manhã</option>
+                              <option value="tarde">Tarde</option>
+                              <option value="selecione">Selecione uma opção...</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <!-- Data de Ingresso/Conclusão -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="ingresso" class="form-label">Data de Ingresso</label>
+                          <input type="date" class="form-control" id="ingresso" placeholder="dd/mm/aaaa" value="2025-08-06">
+                      </div>
+                      <div class="col-md-4">
+                          <label for="conclusao" class="form-label">Data de Conclusão</label>
+                          <input type="date" class="form-control" id="conclusao" placeholder="dd/mm/aaaa" value="2028-08-06">
+                      </div>
+                  </div>
+              </form>
+              <form id="formulario6">
+                  <div id="tituloFormulario6">
+                      <h4>Dados do Responsável</h2>
+                  </div>
+
+                  <!-- Nome e Data de Nascimento -->
+                  <div class="row mb-3">
+                      <div class="col-md-4">
+                          <label for="nomeCompleto" class="form-label">Nome do Responsável</label>
+                          <input type="text" class="form-control" id="nomeCompleto" placeholder="Digite o nome completo" required value="Reginaldo Machado">
+                      </div>
+                  </div>
+
+                  <div class="row mb-3">
+                      <div class="col-md-5">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Informe o email principal" value="reginaldomachado@gmail.com">
+                      </div>
+                  </div>
+
+                  <!-- Parentesco Telefone -->
+                  <div class="row mb-3">
+                      <div class="col-md-2">
+                          <label for="telefoneResidencial" class="form-label">Telefone</label>
+                          <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99887-6859">
+                      </div>
+
+                      <div class="col-md-2">
+                          <label for="parentesco" class="form-label">Parentesco</label>
+                          <select id="parentesco" class="form-select" required>
+                              <option value="pai">Pai</option>
+                              <option value="mae">Mãe</option>
+                              <option value="vo">Vô</option>
+                              <option value="v">Vó</option>
+                              <option value="selecione">Selecione uma opção..</option>
+                          </select>
+                      </div>
+                      
+                  </div>
+              </form>
+
+              <div id="botoesEst" class="d-flex gap-2">
+                  <button id="limpar" type="reset" class="btn btn-secondary">Limpar</button>
+                  <button id="salvar" type="submit" class="btn btn-primary">Salvar</button>
+              </div>
+            </div>
+            <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>
+    
+      </div>
+
+      <!-- Cadastro Postal -->
+
+      <div id="menu3" class="tab-pane fade">
+        <section class="secaoPostal">
+          <Header>
+            <div id="tituloPostal" >
+              <h2>Endereços Residenciais/Não Residenciais</h2>
+            </div>
+        </Header>
+
+        <div class="container mt-4">
+
+            <form class="fundo">
+              <div id="titulo1">
+                <p>Informações Postais:</p>
+              </div>
+
+            <div>
+                <h3>Endereço 1:</h3>
+            </div>
+            <div class="espacoCampos">
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="Centro">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="CEP" value="14400-500">
+                  </div>
+                </div>
+            </div>
+            <div class="espacoCampos">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="cidade" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="cidade" placeholder="Cidade" required value="Franca">
+                    </div>
+                    <div class="col-md-2">
+                      <label for="estado" class="form-label">Estado</label>
+                      <select id="estado" class="selectpicker form-control" data-live-search="true" required>
+                        <option value="sao p">SP - São Paulo</option>
+                        <option value="acr">AC - Acre</option>
+                        <option value="alg">AL - Alagoas</option>
+                        <option value="amap">AP - Amapá</option>
+                        <option value="amazo">AM - Amazonas</option>
+                        <option value="bah">BA - Bahia</option>
+                        <option value="cea">CE - Ceará</option>
+                        <option value="distr">DF - Distrito Federal</option>
+                        <option value="esp">ES - Espírito Santo</option>
+                        <option value="goi">GO - Goiás</option>
+                        <option value="mara">MA - Maranhão</option>
+                        <option value="mato grosso">MT - Mato Grosso</option>
+                        <option value="mato grosso do sul">MS - Mato Grosso do Sul</option>
+                        <option value="minas">MG - Minas Gerais</option>
+                        <option value="para">PA - Pará</option>
+                        <option value="paraiba">PB - Paraíba</option>
+                        <option value="paran">PR - Paraná</option>
+                        <option value="perna">PE - Pernambuco</option>
+                        <option value="piau">PI - Piauí</option>
+                        <option value="rio">RJ - Rio de Janeiro</option>
+                        <option value="rio grande do norte">RN - Rio Grande do Norte</option>
+                        <option value="rio grande do sul">RS - Rio Grande do Sul</option>
+                        <option value="rond">RO - Rondônia</option>
+                        <option value="rorai">RR - Roraima</option>
+                        <option value="santa">SC - Santa Catarina</option>
+                        <option value="">Selecione um estado...</option>
+                        <option value="serg">SE - Sergipe</option>
+                        <option value="tocan">TO - Tocantins</option>
+                      </select>
+                    </div>
+                </div>
+            </div>
+
+                
+
+            <div class="espacoCampos">
+                <div class="col-md-6">
+                    <label for="complemento" class="form-label">Complemento para ajudar a Entrega</label>
+                    <textarea id="caixaTexto" type="text" rows="7" placeholder="Exemplo de complemento: Estarei e casa a partir das 13h...." class="form-control">Casa de um parente, quem irá receber provavelmente vai ser ou vó ou madrinha, Semre tem gente em casa</textarea>
+                </div>
+            </div>
+
+            <div class="espacoCampos">
+                <div  class="d-flex gap-5" class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="telefoneResidencial" class="form-label">Telefone Residencial</label>
+                        <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 2265-5846">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="telefoneCelular" class="form-label">Telefone Celular</label>
+                        <input type="tel" class="form-control" id="telefoneCelular" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99875-3370">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="tipoEnd" class="form-label">Tipo de Endereço:</label>
+                        <select id="tipoEnd" class="selectpicker form-control" data-live-search="true" required>
+                            <option value="">Casa de Parente</option>
+                            <option value="">Casa</option>
+                            <option value="">Trabalho</option>
+                            <option value="">Ponto de Coleta</option>
+                            <option value="">Selecione um tipo de endereço...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tituloEnd2">
+                <h3>Endereço 2 (Opcional):</h3>
+            </div>
+
+            <div class="espacoCampos">
+                <div class="row mb-3">
+                  <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" value="Vila Rezende">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="CEP" value="14406-608">
+                  </div>
+                </div>
+
+            <div class="espacoCampos">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                      <label for="cidade" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="cidade" placeholder="Cidade" required value="Franca">
+                    </div>
+                    <div class="col-md-2">
+                      <label for="estado" class="form-label">Estado</label>
+                      <select id="estado" class="selectpicker form-control" data-live-search="true" required>
+                        <option value="sao p">SP - São Paulo</option>
+                        <option value="acr">AC - Acre</option>
+                        <option value="alg">AL - Alagoas</option>
+                        <option value="amap">AP - Amapá</option>
+                        <option value="amazo">AM - Amazonas</option>
+                        <option value="bah">BA - Bahia</option>
+                        <option value="cea">CE - Ceará</option>
+                        <option value="distr">DF - Distrito Federal</option>
+                        <option value="esp">ES - Espírito Santo</option>
+                        <option value="goi">GO - Goiás</option>
+                        <option value="mara">MA - Maranhão</option>
+                        <option value="mato grosso">MT - Mato Grosso</option>
+                        <option value="mato grosso do sul">MS - Mato Grosso do Sul</option>
+                        <option value="minas">MG - Minas Gerais</option>
+                        <option value="para">PA - Pará</option>
+                        <option value="paraiba">PB - Paraíba</option>
+                        <option value="paran">PR - Paraná</option>
+                        <option value="perna">PE - Pernambuco</option>
+                        <option value="piau">PI - Piauí</option>
+                        <option value="rio">RJ - Rio de Janeiro</option>
+                        <option value="rio grande do norte">RN - Rio Grande do Norte</option>
+                        <option value="rio grande do sul">RS - Rio Grande do Sul</option>
+                        <option value="rond">RO - Rondônia</option>
+                        <option value="rorai">RR - Roraima</option>
+                        <option value="santa">SC - Santa Catarina</option>
+                        <option value="serg">SE - Sergipe</option>
+                        <option value="tocan">TO - Tocantins</option>
+                        <option value="">Selecione um estado...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="espacoCampos">
+                  <div class="col-md-6">
+                    <label for="complemento" class="form-label">Complemento para ajudar a Entrega</label>
+                    <textarea id="caixaTexto" type="text" rows="7" placeholder="Exemplo de complemento: Estarei e casa a partir das 13h...." class="form-control">Minha casa é a numero 970, se ninguem atender pode jogar na sacada que ta tudo certo.</textarea>
+                  </div>
+                </div>
+
+              <!-- Telefones e tipo de Endereço-->
+            <div class="espacoCampos">
+                <div  class="d-flex gap-5" class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="telefoneResidencial" class="form-label">Telefone Residencial</label>
+                        <input type="tel" class="form-control" id="telefoneResidencial" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99778-0800">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="telefoneCelular" class="form-label">Telefone Celular</label>
+                        <input type="tel" class="form-control" id="telefoneCelular" placeholder="(XX) XX XXXX-XXXX" value="(55) 16 99800-3737">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="tipoEnd" class="form-label">Tipo de Endereço:</label>
+                        <select id="tipoEnd" class="selectpicker form-control" data-live-search="true" required>
+                            <option value="">Casa</option>
+                            <option value="">Casa de Parente</option>
+                            <option value="">Trabalho</option>
+                            <option value="">Ponto de Coleta</option>
+                            <option value="">Selecione um tipo de endereço...</option>
+                        </select>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>
+      </div>
+
+      <!-- Tabela Dinâmica -->
+
+      <div id="menu4" class="tab-pane fade">
+        <section class="secaoTabela">
+          <div id="tituloPaginaTab">
+            <h1>Tabela dos Componentes para o WOL</h1>
+          </div>
+
+          <div id="caixatabela1">
+            <p>&RightArrow; Aqui está um breve resumo em formato de tabela sobre nosso site do WOL, contendo todos os componentes relacionados aos requisitos para configurar e usar.</p>
+            <table id="tabela1">
+              <thead class="tabelaHead">
+                <tr>
+                    <th colspan="2" id="tituloSimbolo">Simbologia</th>
+                </tr>
+                <tr id="simbSign">
+                  <th>Símbolo</th>
+                  <th>Significado</th>
+                </tr>
+              </thead>
+              <tbody class="tabelaCorpo">
+                <tr><td class="tabela1TD1">✅</td> <td>Obrigatório para o funcionamento do WOL</td> </tr>
+                <tr><td class="tabela1TD1">ℹ️</td> <td>Recomendado / opcional</td> </tr>
+                <tr><td class="tabela1TD1">❌</td> <td>Não necessário ou não compatível</td> </tr>
+                <tr><td class="tabela1TD1">➖</td> <td>Não se aplica</td> </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div id="caixatabela2">
+            <table id="tabela2">
+              
+              <thead class="tabelaHead">
+                <tr>
+                    <th colspan="5" id="tituloTabela">Componentes e softwares para o uso do Wake-On-Lan</th>
+                </tr>
+                <tr>
+                  <th class="tabela2TH2">Elemento</th>
+                  <th class="tabela2TH2">Função</th>
+                  <th class="tabela2TH2">Precisa ao usar o WOL</th>
+                  <th class="tabela2TH2">Compatibilidade com OS</th>
+                  <th class="tabela2TH2">Observação</th>
+                </tr>
+              </thead>
+              <tbody class="tabelaCorpo">
+                
+              </tbody>
+            </table>
+          </div>
+          <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>
+        
+      </div>
+
+      <!-- Carrosel -->
+
+      <div id="menu5" class="tab-pane fade">
+        <section class="secaoCarrosel">
+          <header>
+          <div class="titulo">
+              <h1>Soluções de Acesso Remoto</h1>
+          </div>
+          </header>
+
+          <div class="container swiper">
+              <div class="card-wrapper">
+                  <ul class="card-list swiper-wrapper">
+                      <li class="card-item parsec swiper-slide">
+                          <a href="https://parsec.app/" target="_blank" class="card-link">
+                              <img src="./imagens/Parsec.jpg" alt="Imagem do Cartão" class="card-image">
+                              <p class="badge">Parsec</p>
+                              <h2 class="card-title">Perfeito para jogos cooperativos locais</h2>
+                              <button class="card-button material-symbols-outlined">
+                              arrow_right_alt
+                              </button>
+                          </a>
+                      </li>
+                      <li class="card-item teamviewer swiper-slide">
+                          <a href="https://www.teamviewer.com/pt-br/" target="_blank" class="card-link">
+                              <img src="./imagens/team-viewer.jpg" alt="Imagem do Cartão" class="card-image">
+                              <p class="badge">Team Viewer</p>
+                              <h2 class="card-title">Ideal para corporativo, com criação de grupos</h2>
+                              <button class="card-button material-symbols-outlined">
+                              arrow_right_alt
+                              </button>
+                          </a>
+                      </li>
+                      <li class="card-item anydesk swiper-slide">
+                          <a href="https://anydesk.com/pt" target="_blank" class="card-link">
+                              <img src="./imagens/AnyDesk.png" alt="Imagem do Cartão" class="card-image">
+                              <p class="badge">AnyDesk</p>
+                              <h2 class="card-title">Com um visual bem direto, sendo compatível com vários Sistemas Operacionais</h2>
+                              <button class="card-button material-symbols-outlined">
+                              arrow_right_alt
+                              </button>
+                          </a>
+                      </li>
+                      <li class="card-item googledesktop swiper-slide">
+                          <a href="https://remotedesktop.google.com/home" target="_blank" class="card-link">
+                              <img src="./imagens/GoogleDesktop.jpg" alt="Imagem do Cartão" class="card-image">
+                              <p class="badge">Google Desktop</p>
+                              <h2 class="card-title">Prático e simples, sendo possível usar no navegador</h2>
+                              <button class="card-button material-symbols-outlined">
+                              arrow_right_alt
+                              </button>
+                          </a>
+                      </li>
+                  </ul>
+
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+          </div>
+          <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>
+        
+      </div>
+
+      <!-- Gráfico -->
+
+      <div id="menu6" class="tab-pane fade">
+        <section class="secaoGrafico">
+          <header>
+          <div id="tituloGrafico">
+              <div id="tituloFlex">
+                  <span id="iconeTitulo" class="material-symbols-outlined">chart_data</span>
+                  <h1>Gráficos Gerais</h1>
+              </div>
+          </div>
+          </header>
+
+          <div class="container1">
+              <div class="chart">
+                  <span class="material-symbols-outlined">bar_chart</span>
+                  <h3>Frequência de Uso de Softwares/Recursos para atividades escolares</h3>
+                  <canvas id="barra" height="600"></canvas>
+              </div>
+              <div class="chart">
+                  <span class="material-symbols-outlined">donut_large</span>
+                  <h3>Distribuição de Tempo</h3>
+                  <canvas id="anel"></canvas>
+              </div>
+              
+          </div>
+
+          <div class="container2">
+              <div class="chart">
+                  <span class="material-symbols-outlined">pie_chart</span>
+                  <h3>Notas das Primeiras Avaliações</h3>
+                  <p>Algumas vão no máximo até 7.5 e outras até 10*</p>
+                  <canvas id="pie"></canvas>
+              </div>
+              <div class="chart">
+                  <span class="material-symbols-outlined">show_chart</span>
+                  <h3>Quantidade de dias letivos por mês</h3>
+                  <canvas id="linha"></canvas>
+              </div>
+          </div>
+
+          <div class="container3">
+              <div class="chart">
+                  <span class="material-symbols-outlined">clock_loader_60</span>
+                  <h3>Score dos Softwares de Acesso Remoto</h3>
+                  <canvas id="polar"></canvas>
+              </div>
+              <div class="chart">
+                  <span class="material-symbols-outlined">radar</span>
+                  <h3>Características dos Softwares de Acesso Remoto e suas Pontuações</h3>
+                  <canvas id="radar"></canvas>
+              </div>
+          </div>
+          <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </section>
+      </div>
+
+      <!-- Land Page -->
+
+      <div id="menu7" class="tab-pane fade">
+        <div id="corpoWOL">
+            <header class="headerMain">
+          <div>
+              <h1 class="siteWolH">Sistemas para Automações em Casa/Empresa</h1>
+              <img id="imagemheader" src="./imagens/logoWol.png" alt="LogoWol">
+          </div>
+          </header>
+          <section id="LandPage" class="siteMain">
+              <div id="tituloInicial">
+                  <div id="tituloesubtitulo">
+                      <h2 class="siteWolH" id="tituloMain">Wake-on-lan</h2>
+                      <p id="subtitulo">Uma alternaternativa para ligar seu Desktop ou Servidor</p>
+                  </div>
+                  <img id="celular-desktop" src="./imagens/celular-desktop.png" alt="Celular ligando o Desktop">
+              </div>
+              <div id="bloco1">
+                  <div class="bloco1e2">
+                      <h3 class="siteWolH" id="titulo1">O que é o Wake-On-Lan?</h3>
+                      <p id="paragrafo1">O Wake-on-lan (ou WOL) é um sistema da rede Ethernet que permite um computador conectado em uma rede, utilizando o endereço MAC do dispositivo, possa ligar ou despertar depois de certas configurações, de forma remota por meio de uma mensagem enviada nessa rede denominada de Magic-Packet. Porem, o computador precisa estar conectado a uma fonte de energia para isso (sempre ligado na tomada por exemplo) e estar em uma rede de internet, pois é por meio dela que o pacote será enviado.</p>
+                  </div>
+                  <div class="bloco1e2">
+                      <h3 class="siteWolH" id="titulo2">Usabilidade</h3>
+                      <p id="paragrafo2">Usar o WOL te permite ligar seu Desktop de maneira remota estando fora ou dentro da sua casa/empresa. Falando assim não parece grande coisa, porém usando esse sistema junto a um Desktop Remoto é quando ele de fato se torna útil, te permitindo usar qualquer computador para acessar o seu que contem seus arquivos e programas. Um exemplo disso, imagine que em uma faculdade de tecnologia você ja tem um investimento em um desktop em casa, porem é mais prático ter um notebook para isso, então você arruma um mais barato porém não roda os programas que você precisa, ai que entra o WOL para ligar seu pc fora de casa e o Software de Desktop Remoto, que te permite acessar seu computador fora de casa.</p>
+                  </div>
+              </div>
+
+              <div id="bloco3">
+                  <div id="comoconfig">
+                      <h3 class="siteWolH" id="titulo3">Como configurar?</h3>
+                      <p id="paragrafo3">A primeira coisa e a mais importante para configurar seu WOL é certificar-se que você possuí a opção de ativação do Wake-On-Lan na BIOS da sua placa mãe, vale ressaltar que nem todas elas possuem esse recurso, após esse passo é crucial que o computador/servidor esteja ligado a uma rede, pois é lá que será enviado o Magic-Packet, e por fim você precisa permitir no Gerenciados de Dispositivos que o adaptador de rede tenha a permissão para acordar o desktop. Depois de configurar o dispositivo basta usar algum software que usará o Endereço MAC e o Ip para enviar o pacote magico, existem diversas opções de aplicativos de celular na Playstore e algumas soluções de Desktop Remoto também fornecem essa função.</p>
+                      <!-- <p class="linkparagrafo3">Acesse <a class="linksF" href="./HTML/manual.html">Leia o Manual de Configuração</a>  do nosso site para mais detalhes sobre essas configurações.</p> -->
+                  </div>
+                  <img id="comoconfigIMG" src="./imagens/playstore-apps.jpg" alt="Aplicativos WOL">
+              </div>
+
+              <div id="bloco4">
+                  <h3 class="siteWolH" id="titulo4">É possível ligar fora de casa?</h3>
+                  <p id="paragrafo4">É possível porém com algumas ressalvas, para o WOL enviar o Magic-Packet para o Desktop, usando um celular de exemplo, ambos devem estar na mesma rede, isso acaba sendo um problema bem complicado, porque da sim para configurar o WOL só precisa de um outro dispositivo que fique ligado 24Hrs para enviar o Packet na rede que o computador está conectado, como um servidor ou seu moldem de wifi, só que para funcionar com o moldem ele precisa ter algumas opções específicas como  IP-MAC Binding, e o servior consome muita energia para alguem que usará esse recurso de maneira doméstica apenas.</p>
+              </div>
+              
+              <div id="bloco5">
+                  <h3 class="siteWolH">Significado de MAC e IP-MAC biding</h3>
+                  <ul>
+                      <li><h4 class="siteWolH">Endereço MAC:</h4> <p id="paragrafolista">O MAC ou Media Acess Control adress, é um número de série de 48 bits que serve para identificar aquele dispositivo de rede Ethernet ou Wi-Fi globalmente. É o endereço base de todos os dispositivos de rede, sendo que existe apenas um para cada placa produzida. Quando pacotes são enviados ou recebidos, os dispositivos fazem uma comparação entre o endereço de destino e o próprio adaptador, se forem os mesmos, o pacote é processado. Quando diferem, a informação é descartada. As conexões funcionam com dois protocolos, o endereço IP e o MAC. O endereço IP é de uma camada acima da Ethernet, sendo a primeira opção para envio de pacotes. Se o destino não está no mesma rede IP do remetente, é necessário enviar para o roteador configurado. A Ethernet utiliza os endereços MAC para esses envios. (<a class="linksF" href="https://tecnoblog.net/responde/o-que-e-endereco-mac/" target="_blank">Fonte</a>)</p> </li>
+
+                      <li><h4 class="siteWolH">IP-MAC Binding:</h4> <p id="paragrafolista">IP-MAC binding significa vincular o endereço de controle de acesso à mídia (MAC) ao endereço de Protocolo de Internet (IP) de um dispositivo. Pense nisso como colocar um crachá em cada dispositivo que se conecta a uma rede. Portanto, se houver uma alteração no endereço MAC ou no endereço IP do dispositivo, você não conseguirá se conectar a essa rede. Com o MAC-binding, a rede de internet consegue identificar e se comunicar com o dispositivo correto, tornando a transferência de dados eficiente e fluida. (<a class="linksF" href="https://www.makeuseof.com/what-is-mac-binding-how-does-it-work/" target="_blank">Fonte</a>)</p> </li>
+                  </ul>
+              </div>
+              <div id="bloco6">
+                  <h3 class="siteWolH">Alguns desses Softwares/Soluções são:</h3>
+
+                  <div id="teamviewer">
+                      <div id="teamviewerconfig">
+                          <h4 class="siteWolH">Team Viwer</h4>
+                          <p id="paragrafoteamviewer">O TeamViewer é uma solução completa para suporte remoto, acesso remoto e reuniões online que permite atender clientes remotamente, trabalhar com colegas à distância e também ficar conectado com seus próprios dispositivos ou ajudar amigos e membros da família. Nele você pode criar um grupo e adicionar mais de um Dispositivo nele, ou conectar diretamente qualquer outro dispositivo que esteja fora do grupo, porem sem a vantagem de não pedir senha, o grupo é uma opção pratica se você deseja usar ele de em uma empresa ou em casa, porque te permite cadastrar as maquinas que desejar se estiverem todas na mesma conta do TeamViewer, podendo conectar sem necessidade da senha, podendo cadastrar 3 máquinas gratuitamente e tendo a opção do WOL porém só na versão paga. <p>
+                          <p class="linksremotos">&rarr; Saiba mais em (<a class="linksF" href="https://www.teamviewer.com/pt-br/global/support/knowledge-base/teamviewer-classic/what-is-teamviewer/" target="_blank">TeamViewer</a>)</p>
+                      </div>
+                      <img id="teamviewerIMG" src="./imagens/team-viewer.jpg" alt="TeamViewer">
+                  </div>
+                  <hr/>
+                  <div id="parsec">
+                      <div id="parsecconfig">
+                          <h4 class="siteWolH">Parsec</h4>
+                          <p id="paragrafoparsec">O Parsec ja é algo menos voltado para o empresárial, pois foi foi projetado fundamentalmente para jogos CO-OP Local (Cooperativos onde precisa estar na mesma Rede), mas também te permite usar de outras formas, nele você cria uma conta e adiciona a outra pessoa como amigo, ele possui umas configurações de permissões, sendo elas permitir que conecte no seu Desktop sem confirmação, e dar acesso livre a mouse e teclado, pela forma que ele foi projetado a segurança dele é um pouco baixa, então deve ter cuidado com a outra pessoa que usará com você, se está planejando usá-lo para ouras tarefas sem ser jogar com seu amigo. Mas se você vai apenas conectar seu notebook ao seu computador por exemplo o unico cuidado que você tem que ter será com as contas cadastradas, se tiver interesse em ir mais a fundo suas versões pagas são feitas para empresa e desenvolvimento tendo vários recursos para isso.</p>
+
+                          <p class="linksremotos">&rarr; Saiba mais em (<a class="linksF" href="https://parsec.app/" target="_blank">Parsec</a>) <br/>&rarr; Configuração do Parsec para jogos (<a class="linksF" href="https://www.adrenaline.com.br/tutorial/parsec-o-que-e-como-funciona-e-como-usar-em-jogos/" target="_blank">Config Jogos</a>).</p>
+
+                      </div>
+                      <img id="parsecIMG" src="./imagens/Parsec.jpg" alt="">
+                  </div>
+                  <hr/>
+                  <div id="google">
+                      <div id="googleconfig">
+                          <h4 class="siteWolH">Google Remote Desktop</h4>
+                          <p id="paragrafogoogle">O Remote Desktop do Google, também conhecido como Chrome Remote Desktop, é uma solução de acesso remoto desenvolvida pelo Google para permitir que os usuários controlem um computador de forma remota a partir de outro dispositivo, como um computador, tablet ou smartphone. Essa ferramenta foi projetada para ser fácil de usar e altamente acessível, tornando-a adequada tanto para uso pessoal quanto profissional. Ele possuí uma caracteristica muito útil, se o computador está na tela de bloqueio do windows por exemplo, ao conectar pelo Google Remote Desktop é possível colocar a senha para entrar na área de trabalho, então mesmo que você não goste muito dos aspectos dele, acaba sendo muito util para ser usado como um secundario onde nele você conecta só para desbloquear o computador e configurar os outros software de acesso remoto, basta você fazer a instalação da extensão dele no navegador e ter uma conta Google, e para conectar é mais simples ainda, o dispositivo que será usado para conectar só tem que entrar no link e logar com o email, sem ter que baixar nada. </p>
+
+                          <p class="linksremotos">&rarr; Saiba mais em (<a class="linksF" href="https://remotedesktop.google.com/?hl=pt-br" target="_blank">Google Remote Desktop</a>)</p>
+                      </div>
+                      <img id="googleIMG" src="./imagens/GoogleDesktop.jpg" alt="Google Remote Desktop">
+                  </div>
+              </div>
+          </section>
+          <section id="navManual" class="Manual">
+              <div id="tituloInicial">
+                  <div id="tituloesubtitulo">
+                      <h2 class="siteWolH" id="tituloMain">Manual de Configurações</h2>
+                      <p id="subtitulo">Configurando o WOL</p>
+                  </div>
+                  <img id="IMGmanual" src="./imagens/imgmanual/IconeMenu 1.png" alt="Manual">
+              </div>
+              <div id="avisoMenu">
+                  <h2 class="siteWolH">Aviso:</h2>
+                  <p>Esses são os passos a passos para configurar o WOL, alguns deles podem variar dependendo do modelo da placa mãe ou o aplicativo que será utilizado para ligar o computador de fato, nesse Manual será utilizado a BIOS de uma placa mãe da fabricante ASUS modelo a520 plus II e o aplicativo Wake On Lan da MR-Webb.</p>
+              </div>
+              <hr id="antestitulo"/>
+
+              <div id="titulopassos">
+                  <h3 class="siteWolH">Configurações Gerais:</h3>
+                  <p class="manualsubtitulo"> São necessárias para qualquer dispositivo que será acordado.</p>
+              </div>
+
+              <div class="blocopassos">
+                  <div id="passo1">
+                      <h3 class="siteWolH">PASSO 1</h3>
+
+                      <p>Na bios de sua placa mãe você deve localizar a opção para ativar o Wake On Lan
+                      Nessa bios é necessário fazer esse caminho > <strong>"F7" para entrar no Advanced mode, e ir na aba "Advanced"</strong>.</p>
+
+                      <img id="imgpasso1" src="./imagens/imgmanual/asus-bios.png" alt="Bios placa mãe">
+                  </div>
+
+                  <div id="passo2">
+                      <h3 class="siteWolH">PASSO 2</h3> 
+
+                      <p>É necessário permitir que o seu adaptador de rede acorde o computador, para isso, deve ir em <strong>Gerenciador de Dispositivos > Localizar seu adaptador > Clicar duas vezes > Gerenciamento de Energia > E marcar a opção "Permitir que este dispositivo acorde o computador"</strong>.</p>
+
+                      <img id="imgpasso2" src="./imagens/imgmanual/gerenciador-dispositivo.jpg" alt="Adaptador de rede">
+                  </div>
+              </div>
+              <hr/>
+              <div id="Segundotitulopassos">
+                  <h3 class="siteWolH">Configuração de Aplicativo:</h3>
+                  <p class="manualsubtitulo">Depende de qual aplicativo mas as informações necessárias para cadastrar a máquina são as mesmas.</p>
+              </div>
+
+              <div class="blocopassos">
+                  <div id="passo3">
+                      <h3 class="siteWolH">PASSO 3</h3>
+
+                      <p id="paragrafopasso3">Clique em <strong>"+"</strong> e depois em <strong>"Inserir Manualmente"</strong></p>
+
+                      <div id="IMGpasso3">
+                          <img id="IMGapp1" src="./imagens/imgmanual/AppWOL1.png" alt="Aplicativo Wake On Lan 1">
+                          <img id="IMGapp2"  src="./imagens/imgmanual/AppWOL2.png" alt="Aplicativo Wake On Lan 2">
+                      </div>
+                  </div>
+
+                  <div id="passo4">
+                      <h3 class="siteWolH">PASSO 4</h3>
+
+                      <p id="paragrafopasso4">Adicione as informações do seu computador, sendo elas o IPv4 e o Endereço MAC que é um código formado por dígitos assim > <strong>Exemplo: "AA:BB:CC:DD:EE:FF"</strong></p>.
+
+                      <div id="IMGpasso4">
+                          <img id="IMGapp3" src="./imagens/imgmanual/AppWOL3.png" alt="Aplicativo Wake On Lan 2">
+                          <img id="IMGapp4" src="./imagens/imgmanual/AppWOL4.png" alt="Aplicativo Wake On Lan 2">
+                      </div>
+                  </div>
+              </div>
+              <hr/>
+              <div id="ethernet">
+                  <h3 class="siteWolH" id="ethernetTitulo">Onde achar os valores de IPv4 e MAC:</h3>
+
+                  <p id="ethernetParagrafo">Basta seguir esse caminho, ambos ficam em Ethernet. <strong>*Esses valores mudam de máquina para máquina*</strong></p>
+                  <div id="IMGethernet">
+                      <img id="ethernetimagem" src="./imagens/imgmanual/ethernet.png" alt="Como acessar o MAC">
+                      <img id="ethernetimagem" src="./imagens/imgmanual/EthernetMAC.png" alt="">
+                  </div>
+              </div>
+          </section>
+
+          <aside id="voltarTopo" class="voltarAoTopo">Voltar ao Topo</aside>
+
+          <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+        </div>
+      </div>
+
+      <!-- Localização -->
+
+      <div id="menu8" class="tab-pane fade">
+          <div id="localizacao" class="row">
+            <div class="tituloLoc">
+                  <h1>Localização</h1>
+            </div>
+                <div class="col-md-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.374000408604!2d-47.39949000000001!3d-20.531872999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a639ef9f0e59%3A0xc160bff04da656e1!2sFranca%20Virtual%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1762975269604!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+          <footer>
+              <p>Essa pagina tem o objetivo de informar apenas o basico, sugiro que busque informações <br/> mais detalhadas pois existe muitos microdetalhes sobre as configurações do WOL <br>e dos Acessos Remotos, agradeço pela visita ao site.</p>
+              <p>10/11/2025</p>
+              <p id="contatofooter">Contato: exemploemail91@gmail.com</p>
+          </footer>
+      </div>
+
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tabela Dinâmica -->
+    <script src="./JS/tabela.js"></script>
+
+    <!-- Carrosel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./JS/carousel.js"></script>
+
+    <!-- Gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./JS/grafico.js"></script>
+
+    <!-- Slide -->
+    <script src="./JS/slide.js"></script>
+    <script src="./JS/corMenu.js"></script>
+
+    <!-- Land Page -->
+     <script src="./JS/voltarAoTopo.js"></script>
+
+</body>
+</html>

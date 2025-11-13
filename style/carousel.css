@@ -1,0 +1,240 @@
+.titulo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 6vw;
+    padding: 20px;
+    background-color: rgb(115, 214, 253);
+    border-bottom: 2px solid #000000;
+    box-shadow: 1px 1px 10px rgb(25, 78, 139);
+    margin-top: -2px;
+    z-index: 1;
+    border-top: 2px solid rgb(0, 110, 255);
+}
+
+.titulo h1 {
+    
+    border-width: fit-content;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.secaoCarrosel {
+    padding: 0; 
+    width: 100%;
+}
+
+.card-wrapper {
+    max-width: 1600px;
+    margin: 0 auto 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+
+.card-list.swiper-wrapper {
+    width: 100%;
+    margin-left: 225px;
+}
+
+.card-list .card-item .card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    margin: auto;
+    user-select: none;
+    padding: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.card-list .card-item .card-link:active {
+    cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.card-list .card-item .card-image {
+    width: 98%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.card-list .card-item:hover .card-image {
+    transition: 1s ease;
+    transform: scale(1.05);
+   
+}
+
+.card-list .card-item .badge {
+    color: rgb(245, 28, 28);
+    background: rgb(250, 130, 130);
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.card-list .card-item .card-title {
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.card-list .card-item .card-button {
+    height: 35px;
+    width: 35px;
+    color: rgb(250, 130, 130);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid rgb(250, 130, 130);
+    transform: rotate(-45deg);
+    transition: 0.5s ease;
+}
+
+.card-list .card-item:hover .card-button {
+    background: rgb(250, 130, 130);
+    color: white;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 20px;
+    width: 20px;
+    opacity: 0.3;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 68, 255);
+
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: rgb(115, 214, 253);
+}
+
+/* Cores */
+
+/* TEAM VIEWER */
+
+
+.card-list .card-item.teamviewer .card-image {
+    border: 2px solid rgb(0, 26, 255);
+}
+
+.card-list .card-item.teamviewer .card-link:hover {
+    border-color: rgb(0, 26, 255);
+}
+
+.card-list .card-item.teamviewer .badge {
+    color: rgb(0, 26, 255);
+    background: rgb(163, 169, 255);
+}
+
+.card-list .card-item.teamviewer .card-button {
+    color: rgb(163, 169, 255);
+    border: 2px solid rgb(163, 169, 255);
+    
+}
+
+.card-list .card-item.teamviewer:hover .card-button {
+    background: rgb(163, 169, 255);
+    color: white;
+}
+
+
+/* GOOGLE DESKTOP */
+
+
+.card-list .card-item.googledesktop .card-link:hover {
+    border-color: rgb(255, 94, 0);
+}
+
+.card-list .card-item.googledesktop .badge {
+    color: rgb(255, 94, 0);
+    background: rgb(255, 192, 97);
+}
+
+.card-list .card-item.googledesktop .card-button {
+    color: rgb(255, 192, 97);
+    border: 2px solid rgb(255, 192, 97);
+    
+}
+
+.card-list .card-item.googledesktop:hover .card-button {
+    background: rgb(255, 192, 97);
+    color: white;
+}
+
+/* ANYDESK */ 
+/* para deixar o vermelho diferente do parsec, optei por pegar pelo figma a cor hexadecimal do AnyDesk */
+
+
+.card-list .card-item.anydesk .card-image {
+    border: 2px solid #EF443B;
+}
+
+.card-list .card-item.anydesk .card-link:hover {
+    border-color: #EF443B;
+}
+
+.card-list .card-item.anydesk .badge {
+    color: #ff0d00;
+    background: #FB7771;
+}
+
+.card-list .card-item.anydesk .card-button {
+    color: #EF443B;
+    border: 2px solid #EF443B;
+    
+}
+
+.card-list .card-item.anydesk:hover .card-button {
+    background: #EF443B;
+    color: white;
+}
+
+@media screen and (max-width: 1366px) {
+    .card-list.swiper-wrapper {
+        width: 50%;
+        margin-left: 480px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+    .titulo {
+        /* Remove o padding lateral para maximizar o espaço */
+        padding: 20px 15px; 
+    }
+
+    .card-wrapper .swiper-pagination-bullet {
+        margin: auto;
+        height: 15px;
+        width: 15px;
+        
+    }
+
+    .card-list.swiper-wrapper {
+        width: 50%;
+        height: 100%;
+        margin-left: 970px;
+    }
+    
+}

@@ -1,0 +1,113 @@
+.secaoTabela table { 
+    background-color: rgba(168, 242, 255, 0.958);
+    margin: 5vw auto;
+    border-collapse: separate
+}
+
+.secaoTabela tr {
+    background-color: rgb(255, 255, 255);
+}
+
+.secaoTabela th {
+    font-weight: 900;
+    text-align: center;
+}
+
+.secaoTabela td {
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+.secaoTabela #tituloSimbolo {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    
+}
+
+.secaoTabela #simbSign th {
+    padding: 7px;
+    background-color: rgb(180, 250, 255);
+}
+
+
+.secaoTabela #tabela1 th, 
+.secaoTabela #tabela2 th {
+    border: 2px solid black;
+}
+
+.secaoTabela #tituloPaginaTab {
+    position: relative;
+    background-color: rgb(115, 214, 253);
+    padding: 20px;
+    text-align: center;
+    margin: -0.4vw;
+    border-bottom: 2px solid #000;
+    margin-top: 0vh;
+    box-shadow: 1px 1px 10px rgb(25, 78, 139);
+    margin-top: -2px;
+    z-index: 1;
+    border-top: 2px solid rgb(0, 110, 255);
+}
+
+.secaoTabela .tabela1TD1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.secaoTabela #tabela1 {
+    width: 25vw;
+    margin-top: 5vw;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.secaoTabela #tabela2 {
+    width: 75vw;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.secaoTabela #tituloTabela {
+    padding: 25px;
+    font-size: 20px;
+}
+
+.secaoTabela .tabela2TH2 {
+    padding: 10px;
+    background-color: rgb(180, 250, 255);
+}
+
+
+
+.secaoTabela #tabela2 tbody td{
+    padding: 5px;
+    height: 2vw;
+}
+
+.secaoTabela #caixatabela1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 5vw;
+    width: 50vw;
+    padding: 25px;
+    background-color: white;
+    box-shadow:3px 3px 20px rgb(0, 86, 156);
+}
+
+.secaoTabela #caixatabela1 p {
+    margin-top: 5vw;
+    text-align: justify;
+    width: 20vw;
+    font-size: 17px;
+}
+
+.secaoTabela #tituloSimbolo, 
+.secaoTabela #tituloTabela {
+    background-color: rgb(106, 219, 253);
+}
