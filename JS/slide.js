@@ -50,16 +50,3 @@ botaoSlide.forEach(botao => {
     }
   });
 });
-
-// const abrirAba = (event) => {
-
-//   event.preventDefault();
-
-//   const navegacao = document.querySelector('.nav-link[href="#menu7"]');
-
-//   if (navegacao) {
-//     navegacao.click();
-//   }
-// };
-
-// botaoSlide.addEventListener("click", abrirAba);

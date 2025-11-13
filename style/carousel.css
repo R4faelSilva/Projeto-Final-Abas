@@ -213,7 +213,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
     .card-wrapper {
         margin: 0 auto;
         margin-bottom: 50px;
@@ -234,7 +234,7 @@
     .card-list.swiper-wrapper {
         width: 50%;
         height: 100%;
-        margin-left: 970px;
+        margin-left: 910px;
     }
     
 }
